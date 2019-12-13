@@ -1,0 +1,9 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /converter
+
+libre:
+  office:
+    home: "C:\\Program Files (x86)\\LibreOffice"
+    process-count: 5
