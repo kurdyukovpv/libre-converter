@@ -3,7 +3,8 @@ server:
   servlet:
     context-path: /converter
 
-libre:
-  office:
-    home: "C:\\Program Files (x86)\\LibreOffice"
-    process-count: 5
+jodconverter:
+  local:
+    enabled: true
+    office-home: C:\Program Files (x86)\LibreOffice
+    port-numbers: 2002
