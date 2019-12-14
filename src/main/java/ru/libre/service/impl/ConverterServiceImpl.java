@@ -3,7 +3,6 @@ package ru.libre.service.impl;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.jodconverter.DocumentConverter;
-import org.jodconverter.office.OfficeException;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
@@ -40,9 +39,8 @@ public class ConverterServiceImpl implements ConverterService {
                     return helper.getTargetName();
                 }
             };
-        } catch (OfficeException e) {
-            log.error("Conversion error", e);
-            throw new ConversionException("Conversion error", e);
+        } catch (Exception e) {
+            throw new ConversionException(e);
         }
     }
 }
