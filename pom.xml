@@ -53,13 +53,14 @@
     </dependencies>
 
     <build>
-        <finalName>libre-converter.jar</finalName>
+        <finalName>libre-converter</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <mainClass>ru.libre.ConverterApplication</mainClass>
+                    <outputDirectory>.artifacts</outputDirectory>
                 </configuration>
             </plugin>
             <plugin>

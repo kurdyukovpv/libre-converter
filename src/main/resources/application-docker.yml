@@ -1,0 +1,5 @@
+jodconverter:
+  local:
+    enabled: true
+    office-home: /usr/lib/libreoffice
+    port-numbers: 2002
