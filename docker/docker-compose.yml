@@ -1,9 +1,0 @@
-version: "3"
-
-services:
-    converter:
-        build:
-            context: ../
-            dockerfile: ./docker/libre/Dockerfile
-        ports:
-            - "8090:8090"

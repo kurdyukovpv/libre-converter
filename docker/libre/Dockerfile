@@ -1,4 +1,4 @@
-FROM kurdyukovpv/libre:0.2
-COPY ./.artifacts /usr/src/libre-converter/.artifacts
-WORKDIR /usr/src/libre-converter/.artifacts
-CMD java -jar -Dspring.profiles.active=docker libre-converter.jar
+FROM ubuntu:latest
+RUN apt-get update
+RUN apt-get -y install openjdk-11-jre
+RUN apt-get -y install libreoffice --no-install-recommends
